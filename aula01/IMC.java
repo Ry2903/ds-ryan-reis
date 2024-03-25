@@ -14,28 +14,26 @@ public class IMC {
         System.out.print("Insira seu peso (em KG): ");
         peso = scanner.nextFloat();
 
-        System.out.print("Insira sua altura (em CM): ");
+        System.out.print("Insira sua altura (em M): ");
         altCM = scanner.nextFloat();
 
-        Float altM = altCM / 100.0f;
-
-        imc = peso / (altM * altM);
+        imc = peso / (altCM * altCM);
         System.out.println("Seu IMC é: "+imc);
         
         if (imc <= 16.9) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é MUITO ABAIXO DO PESO");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é MUITO ABAIXO DO PESO");
         } else if (imc >= 17 && imc <= 18.4) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é ABAIXO DO PESO");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é ABAIXO DO PESO");
         } else if (imc >= 18.5 && imc <= 24.9) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é PESO NORMAL");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é PESO NORMAL");
         } else if (imc >= 25 && imc <= 29.9) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é ACIMA DO PESO");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é ACIMA DO PESO");
         } else if (imc >= 30 && imc <= 34.9) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU I");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU I");
         } else if (imc >= 35 && imc <= 40) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU II");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU II");
         } else if (imc >= 40) {
-            System.out.println(nome+" tem "+altM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU III");
+            System.out.println(nome+" tem "+altCM+"m de altura e pesa "+peso+"kg. Sua situação é OBESIDADE GRAU III");
         }
     }
 }
