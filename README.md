@@ -1,2 +1,2 @@
 # ds-ryan-reis
-Reposição para as aulas de Desenvolvimento de Sistemas com o professor João Siles
+Repositório para as aulas de Desenvolvimento de Sistemas com o professor João Siles
