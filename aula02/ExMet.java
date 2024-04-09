@@ -8,13 +8,10 @@ public class ExMet {
     }
 
     static void MetodoB(String frase, String palavra) {
-        String[] corte = frase.split(" ");
-        for (String c : corte) {
-            if (c.equals(palavra)) {
-                System.out.println("A frase: '"+frase+"' contem a palavra '"+palavra+"'.");
-            } else {
-                System.out.println("A frase: '"+frase+"' nao contem a palavra '"+palavra+"'.");
-            }
+        if (frase.contains(palavra)) {
+            System.out.println("A frase: '"+frase+"' contem a palavra '"+palavra+"'.");
+        } else {
+            System.out.println("A frase: '"+frase+"' nao contem a palavra '"+palavra+"'.");
         }
     }
 
