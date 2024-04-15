@@ -1,3 +1,5 @@
+package aula02;
+
 public class ExMet {
     static void MetodoA (String x, String y) {
         if (x == y) {
