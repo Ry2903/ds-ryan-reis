@@ -7,14 +7,14 @@ public class ExLoop {
     //https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/fibonacci-formula-1618931842-1623683815.png
 
     public static void main (String[] args) {
-        for (int a = 0; a < 14; a++) {
-            int fibonacci;
-            int b = 1;
-            fibonacci = a + b;
-            a = b;
-            fibonacci = a;
-            System.out.println(fibonacci);
-            a++;
+        int fibo = 1, nacci = 0;
+
+        System.out.println(nacci);
+        System.out.println(fibo);
+        for (int i = 0; i < 8; i++) {
+            fibo = fibo + nacci;
+            nacci = fibo - nacci;
+            System.out.println(fibo);
         }
     }
 }
