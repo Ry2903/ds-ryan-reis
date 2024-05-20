@@ -1,34 +1,27 @@
 package Projeto_Carro;
+import javax.swing.*;
 public class Carro {
-    private String Marca;
-    private String Modelo;
-    private String Cor;
+    public static void main(String[] args) {
+        CarroObj Carro1;
+        
+        Carro1 = new CarroObj ();
+        
+        String Brand = JOptionPane.showInputDialog("Qual a marca do seu carro?");
+        Carro1.setMarca (Brand);
+        System.out.println(Carro1.getMarca());
+        
+        String Model = JOptionPane.showInputDialog("Qual o modelo do seu carro?");
+        Carro1.setModelo (Model);
+        System.out.println(Carro1.getModelo());
 
-    public String getMarca() {
-        return marca;
+        String Color = JOptionPane.showInputDialog("Qual a cor do seu carro?");
+        Carro1.setCor (Color);
+        System.out.println(Carro1.getCor());
+        
+        System.out.println(Carro1.getCarro());
     }
 
-    public void setMarca(String Marca) {
-        this.marca = marca;
-    }
+    public static void (String[] args){
 
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setMarca(String Modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String Cor) {
-        this.cor = cor;
-    }
-
-    public String getCarro() {
-        System.out.println("Seu carro é um "+modelo+", "+cor+" da marca: "+marca+"");
     }
 }
