@@ -2,7 +2,8 @@ package Projeto_Carro;
 public class CarroObj {
     private String Marca;
     private String Modelo;
-    private String Cor;
+    private int Rodas;
+    private int Portas;
 
     public String getMarca() {
         return Marca;
@@ -20,15 +21,23 @@ public class CarroObj {
         this.Modelo = Modelo;
     }
 
-    public String getCor() {
-        return Cor;
+    public String getRodas() {
+        return Rodas;
     }
 
-    public void setCor(String Cor) {
-        this.Cor = Cor;
+    public void setRodas(int Rodas) {
+        this.Rodas = Rodas;
+    }
+
+    public String getPortas() {
+        return Portas;
+    }
+
+    public void setPortas(int Portas) {
+        this.Portas = Portas;
     }
 
     public String getCarro() {
-        return("Seu carro é um "+Modelo+", "+Cor+" da marca: "+Marca+"");
+        return("Seu carro é um "+Modelo+" ("+Marca+"); Rodas: "+Rodas+"; Portas: "+Portas+".");
     }
 }

@@ -1,27 +1,23 @@
 package Projeto_Carro;
-import javax.swing.*;
+
 public class Carro {
     public static void main(String[] args) {
-        CarroObj Carro1;
+        CarroObj car;
         
-        Carro1 = new CarroObj ();
+        car = new CarroObj();
         
-        String Brand = JOptionPane.showInputDialog("Qual a marca do seu carro?");
-        Carro1.setMarca (Brand);
-        System.out.println(Carro1.getMarca());
-        
-        String Model = JOptionPane.showInputDialog("Qual o modelo do seu carro?");
-        Carro1.setModelo (Model);
-        System.out.println(Carro1.getModelo());
+        car.setMarca("Chevrolet");
+        System.out.println(car.getMarca());
 
-        String Color = JOptionPane.showInputDialog("Qual a cor do seu carro?");
-        Carro1.setCor (Color);
-        System.out.println(Carro1.getCor());
-        
-        System.out.println(Carro1.getCarro());
-    }
+        car.setModelo("Tracker");
+        System.out.println(car.getModelo());
 
-    public static void (String[] args){
+        car.setRodas(4);
+        System.out.println(car.getRodas());
 
+        car.setPortas(4);
+        System.out.println(car.getPortas());
+
+        System.out.println(car.getCarro());
     }
 }
